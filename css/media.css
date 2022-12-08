@@ -1,0 +1,6 @@
+@media screen and ( max-width: 768px){
+    .empty{display:none}
+    .section1{flex-direction: column;}
+    .contact_section1_div1{width: 100%;}
+     
+}

@@ -1,11 +1,13 @@
 .container{
-    max-width: 90rem;
+    max-width: 1440px;
     width: 100%;
     margin: 0 auto;
 }
 .header{
-    width: 100%;
-    height: 3.125rem;
+    max-width: inherit;
+    width: inherit;
+    /* height: 3.125rem; */
+    padding: 18px 20px 18px 23px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,7 +59,7 @@ li:hover{
 }
 .section1_div1{
     width: 60%;
-    height: 37.438rem;
+    height: 599px;
     background-image: url("../images/nature.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -106,7 +108,7 @@ li:hover{
 }
 .section1_div3{
     width: 40%;
-    height: 37.438rem;
+    height: 599px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,25 +159,33 @@ li:hover{
 }
 .section2{
     width: 90%;
-    height: 28rem;
-    margin: 0 auto;
-    margin-top: 2rem;
+    margin: 32px auto;
+}
+.section2-article1{
+    width: 32%;
 }
 .h2-4{
     color: black;
     font-weight: bold;  
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    width: 10%;
-    display: flex;
-    justify-content: center;
 }
 .section2-div1{
-    display: flex;
-}
-.section2_image1:hover{ 
     width: 100%;
-    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+.section2_image1{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.section2_image1:hover{
+    transform: scale(2); 
+    transition: 2s;
 }
 .section2-figcaprion1{
     font-size: 1rem;
@@ -209,6 +219,7 @@ li:hover{
 }
 .section3-div{
     display: flex;
+    justify-content: space-between;
 }
 .section3_div1{ 
     width: 60%;
@@ -254,14 +265,11 @@ li:hover{
     width: 80%;
 }
 .section3-div5{
-    width: 40%;
+    width: 30%;
     height: 56rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3.8rem;
-    margin-bottom: 7rem;
+    justify-content: space-between;
 }
 .section3_figure1{
     height: 56rem;
@@ -280,26 +288,154 @@ li:hover{
     justify-content: space-between;
     background-color:#a6adb4;
 }
-.footer_div{
+.footer_div{ 
     width: 40%;
-    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 3rem;
+    justify-content: space-evenly;
     color: #cbd0d3;
+    line-height: 20px;
 }
 .footer_h4{
+    display: flex;
+    align-items: top;
     font-size: 1rem;
     font-weight: bold;
     color: #ffffff;
-    margin-top: -3rem;
 }
 .footer_div1{
+    width: 20%;
     font-size: 1rem;
-    width: 21%;
     display: flex;
-    gap: 2rem;
+    justify-content: space-evenly;
     align-items: center;
+}
+/* მეორე გვერდის დასაწყისი */
+.contact_worldnews{
+    font-weight: bolder;
+    color: black;
+}
+.contact_section1{
+    width: 90%;
+    height: 500px;
+    margin: 103px auto 36px ;
+    display: flex;
+}
+.contact_section1_div1{
+    width: 50%;
+    height: 500px;
+    background-image: url("../images/nature2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.contact_section1_div1_h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact_section1_form1{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact_section1_form1_div1{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact_section1_form1_div2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact_section1_form1_label{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #202124;
+}
+.contact_section1_form1_input1{
+    border-radius: 10px;
+    height: 40px;
+    border-color: #ffffff;
+}
+.contact_section1_form1_button1{
+    width: 40%;
+    padding: 10px 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    border: none;
+}
+.contact_section1_form1_button1:hover{
+    transform: scale(1.5);
+    transition: 1s;
+    background-color: pink;
+}
+.contact_section2{
+    width: 90%;
+    height: 255px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contact_section2_div1{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact_section2_figure1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact_section2_image1{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.contact_section2_figcaption1{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #202124;
+}
+.contact_section2_p1{
+    width: 30%;
+    height: 100%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    color: #a6adb4;
+    line-height: 25px;
+}
+.contact_section3{
+    width: 90%;
+    height: 831px;
+    margin: 36px auto 160px;
+}
+.contact_section3_div1{
+    width: 100%;
+    height: 60%;
+    background-image: url("../images/elephant.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.contact_section3_p1{
+    font-size: 1rem;
+    color:#a6adb4;
+    line-height: 20px;
+    margin: 70px auto 50px auto;
 }
 
