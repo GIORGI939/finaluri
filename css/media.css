@@ -1,6 +1,99 @@
 @media screen and ( max-width: 768px){
     .empty{display:none}
     .section1{flex-direction: column;}
+    .section1_div1{width: 100%;}
+    .section1_div3{width: 100%;}
+    .section2-article1{width: 45%;}
+    .section2-figcaprion1{width:80%}
+    .section3-div{flex-direction: column;}
+    .section3_div1{width: 100%;}
+    .section3-div5{
+        flex-direction: row;
+        margin-top: 40px;
+        width: 100%;
+    }
+    .section3_figure1{width: 48%;}
+    .footer{
+        margin-top: 300px;
+        padding: 61px 66px 27px 5px;
+        gap: 20px;
+    }
+    .contact_section1{flex-direction: column;}
     .contact_section1_div1{width: 100%;}
-     
+    .contact_section1_form1{width: 100%;}
+    .contact_section1_form1_div2{margin-bottom: 50px;}
+    .contact_section2{flex-direction: column;
+    margin-top: 150px;}
+    .contact_section2_div1{width: 100%;}
+    .contact_section2_figcaption1{
+        width: 60%; 
+        margin-bottom: 40px;}
+    .contact_section2_div2{width: 100%;}
+    .contact_section3{margin-top: 150px;}
+    .footer2{margin-top: 300px;
+        padding: 61px 66px 27px 5px;
+        gap: 20px;}
+}
+@media screen and (max-width:480px){
+    .empty1{display: block;}
+    .empty2{display: none;}
+    .fa-bars-staggered{
+        display: block;
+    }
+    ul{
+        display: none;
+        width: 100%;
+        position: fixed;
+        top: 52px;
+        left: -100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    ul.active{
+        left: 0;
+    }
+    .contact_section1_form1_button2{
+        width: 65%;
+        padding: 10px 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 5px;
+        color: white;
+        background-color: red;
+        border: none;
+    }
+    .section2-div1{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 150px;}
+    .contact_section2_div2{
+            width: 100%;
+            flex-direction: column;
+            margin-bottom: 200px;
+        }
+    .contact_section2_p1{width: 100%;
+        margin-top: 20px;}
+    .section2-article1{width: 100%;}
+    .section2-figcaprion1{padding-left: 23px;}
+    .section3-div5{
+        width: 100%;
+        height: 1100px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .section3_figure1{width: 100%;}
+    .footer{
+        margin-top: 1100px;
+        height: 143px;
+        justify-content: center;
+    }
+    .contact_section3{margin-top: 400px;
+    }
+    .footer2{
+        margin-top: 200px;
+        height: 143px;
+        justify-content: center;
+    }
+    
 }

@@ -2,6 +2,7 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+    background-color: #f6f8f9;
 }
 .header{
     max-width: inherit;
@@ -52,6 +53,9 @@ li:hover{
     0%{transform: rotate(0deg);}
     100%{transform: rotate(360deg);}
 }
+.fa-bars-staggered{
+    display: none;
+}
 .section1{
     width: 100%;
     margin-top: 3.125rem;
@@ -80,6 +84,7 @@ li:hover{
   color: white;
   font-weight: bold;  
   font-size: 1.5rem;
+  font-family: 'La Belle Aurore', cursive;
 }
 .h2-1::after{
     content: "";
@@ -93,10 +98,12 @@ li:hover{
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
+    font-family: 'La Belle Aurore', cursive;
 }
 .section1-p{
     font-size: 1rem;
     color: white;
+    font-family: 'La Belle Aurore', cursive;
 }
 .section1-button{
     color: white;
@@ -105,6 +112,7 @@ li:hover{
     border-radius: 0.5rem;
     border: none;
     cursor: pointer;
+    font-family: 'La Belle Aurore', cursive;
 }
 .section1_div3{
     width: 40%;
@@ -125,6 +133,7 @@ li:hover{
     color: black;
     font-weight: bold;  
     font-size: 1.5rem;
+    font-family: 'La Belle Aurore', cursive;
 }
 .h2-3::after{
     content: "";
@@ -145,17 +154,20 @@ li:hover{
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 1.25rem;
+    font-family: 'La Belle Aurore', cursive;
 }
 .section1-h4{
     color: black;
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    font-family: 'La Belle Aurore', cursive;
 }
 .sectio1-p1{
     color: #a6adb4;
     font-size: 1rem;
     margin-bottom: 1rem;
+    font-family: 'La Belle Aurore', cursive;
 }
 .section2{
     width: 90%;
@@ -163,48 +175,64 @@ li:hover{
 }
 .section2-article1{
     width: 32%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .h2-4{
     color: black;
     font-weight: bold;  
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+    font-family: 'La Belle Aurore', cursive;
 }
 .section2-div1{
     width: 100%;
+    height: 350px;
     display: flex;
     justify-content: space-between;
 }
+.box_image{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
 .section2_image1{
     width: 100%;
-    height: 180px;
+    height: 100%;
     object-fit: cover;
     object-position: center;
-    overflow: hidden;
     border-radius: 5px;
+    transition: 2s;
 }
 .section2_image1:hover{
     transform: scale(2); 
-    transition: 2s;
+    cursor: pointer;
 }
 .section2-figcaprion1{
     font-size: 1rem;
     font-weight: bold;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
-    width: 60%;
-    height: 3rem;
+    justify-content: center; */
+    width: 70%;
+    /* height: 3rem; */
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-family: 'La Belle Aurore', cursive;
 }
 .section2_p1{
     color: #a6adb4;
     font-size: 1rem;
     width: 70%;
-    height: 2rem;
+    /* height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 3rem;
+    margin-left: 3rem; */
+    font-family: 'La Belle Aurore', cursive;
 }
 .section3{
     width: 90%;
@@ -216,6 +244,7 @@ li:hover{
     font-weight: bold;  
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+    font-family: 'La Belle Aurore', cursive;
 }
 .section3-div{
     display: flex;
@@ -263,6 +292,7 @@ li:hover{
     font-size: 1rem;
     color: white;
     width: 80%;
+    font-family: 'La Belle Aurore', cursive;
 }
 .section3-div5{
     width: 30%;
@@ -280,21 +310,24 @@ li:hover{
 .section3-figcaption1{
     font-size: 1rem;
     font-weight: bold;
+    font-family: 'La Belle Aurore', cursive;
 }
 .footer{
     width: 100%;
-    height: 12.5rem;
+    /* height: 12.5rem; */
     display: flex;
     justify-content: space-between;
     background-color:#a6adb4;
+    padding: 56px 138px 60px 142px;
 }
 .footer_div{ 
-    width: 40%;
+    /* width: 40%; */
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    /* align-items: center;
+    justify-content: space-evenly; */
     color: #cbd0d3;
-    line-height: 20px;
+    line-height: 30px;
+    gap: 50px;
 }
 .footer_h4{
     display: flex;
@@ -304,11 +337,12 @@ li:hover{
     color: #ffffff;
 }
 .footer_div1{
-    width: 20%;
-    font-size: 1rem;
+    /* width: 20%; */
+    font-size: 1.5rem;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    gap: 40px;
 }
 /* მეორე გვერდის დასაწყისი */
 .contact_worldnews{
@@ -328,14 +362,15 @@ li:hover{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .contact_section1_div1_h2{
     font-size: 2rem;
     font-weight: bold;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-family: 'La Belle Aurore', cursive;
 }
 .contact_section1_form1{
     width: 50%;
@@ -360,11 +395,13 @@ li:hover{
     font-size: 1rem;
     font-weight: bold;
     color: #202124;
+    font-family: 'La Belle Aurore', cursive;
 }
 .contact_section1_form1_input1{
     border-radius: 10px;
     height: 40px;
     border-color: #ffffff;
+    font-family: 'La Belle Aurore', cursive;
 }
 .contact_section1_form1_button1{
     width: 40%;
@@ -375,11 +412,14 @@ li:hover{
     color: white;
     background-color: red;
     border: none;
+    font-family: 'La Belle Aurore', cursive;
 }
+.empty3{display: none;}
 .contact_section1_form1_button1:hover{
     transform: scale(1.5);
     transition: 1s;
     background-color: pink;
+    cursor: pointer;
 }
 .contact_section2{
     width: 90%;
@@ -409,15 +449,22 @@ li:hover{
     font-size: 1.8rem;
     font-weight: bold;
     color: #202124;
+    font-family: 'La Belle Aurore', cursive;
+}
+.contact_section2_div2{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
 }
 .contact_section2_p1{
-    width: 30%;
+    width: 45%;
     height: 100%;
     font-size: 1rem;
     display: flex;
     align-items: center;
     color: #a6adb4;
     line-height: 25px;
+    font-family: 'La Belle Aurore', cursive;
 }
 .contact_section3{
     width: 90%;
@@ -437,5 +484,13 @@ li:hover{
     color:#a6adb4;
     line-height: 20px;
     margin: 70px auto 50px auto;
+    font-family: 'La Belle Aurore', cursive;
 }
+.footer2{ width: 100%;
+    /* height: 12.5rem; */
+    display: flex;
+    justify-content: space-between;
+    background-color:#a6adb4;
+    padding: 56px 138px 60px 142px;}
+
 
